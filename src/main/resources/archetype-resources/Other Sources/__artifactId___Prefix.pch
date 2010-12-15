@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the '${artifactId}' target in the '${artifactId}' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+	#import "TargetConditionals.h"
+    #import <UIKit/UIKit.h>
+	#import "DDLog.h"
+	
+	/*
+	 * If running in simulator set log level to debug,
+	 * else log level will be error
+	 */
+	\#if TARGET_IPHONE_SIMULATOR
+	  static const int ddLogLevel = LOG_LEVEL_WARN;
+	\#else
+	  static const int ddLogLevel = LOG_LEVEL_ERROR;
+	#endif	
+#endif

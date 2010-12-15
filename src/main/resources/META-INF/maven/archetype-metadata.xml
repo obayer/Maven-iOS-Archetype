@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="iOS Quickstart Project" partial="true">
+	<fileSets>
+		<requiredProperties>
+			<requiredProperty key="groupId">
+				<defaultValue>com.github.iosproject</defaultValue>
+			</requiredProperty>
+			<requiredProperty key="version">
+				<defaultValue>1.0.0-SNAPSHOT</defaultValue>
+			</requiredProperty>
+		</requiredProperties>
+		<fileSet filtered="false" packaged="false" encoding="UTF-8">
+			<directory/>
+			<includes>
+				<include>**/*.plist</include>
+			</includes>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>__artifactId__.xcodeproj</directory>
+			<includes>
+				<include>project.pbxproj</include>
+			</includes>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>Classes</directory>
+			<includes>
+				<include>**/*.m</include>
+				<include>**/*.h</include>
+			</includes>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="false" packaged="false" encoding="UTF-8">
+			<directory>Frameworks</directory>
+			<includes/>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>Resources</directory>
+			<includes>
+				<include>**/*.xib</include>
+			</includes>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory>Other Sources</directory>
+			<includes>
+				<include>**/*.pch</include>
+				<include>**/main.m</include>
+			</includes>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="false" packaged="false" encoding="UTF-8">
+			<directory>Other Sources/UnitTesting</directory>
+			<includes>
+				<include>**/*.h</include>
+				<include>**/*.m</include>
+				<include>**/*.sh</include>			
+			</includes>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="false" packaged="false" encoding="UTF-8">
+			<directory>Other Sources/Logging</directory>
+			<includes/>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="false" packaged="false" encoding="UTF-8">
+			<directory>UnitTests</directory>
+			<includes/>
+			<excludes/>
+		</fileSet>
+		<fileSet filtered="false" packaged="false" encoding="UTF-8">
+			<directory>UIATests</directory>
+			<includes/>
+			<excludes/>
+		</fileSet>
+	</fileSets>
+</archetype-descriptor>

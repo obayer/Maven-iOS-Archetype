@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
+
+    <name>_iOS Project Name_</name>
+    <description>_iOS Project Description_</description>
+    <url>_iOS Project URL_</url>
+    <inceptionYear>_YEAR_</inceptionYear>
+    
+    <issueManagement>
+        <system>__YOUR TRACKER__</system>
+        <url>__TRACKER URL__</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:_SCM URL_</connection>
+        <developerConnection>${scm.connection}</developerConnection>
+        <url>__SCM URL__</url>
+    </scm>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changes-plugin</artifactId>
+                <configuration>
+                    <issueLinkTemplatePerSystem>
+                        <default>%URL%/show_bug.cgi?id=%ISSUE%</default>
+                        <jira>__JIRA-URL__/%ISSUE%</jira>
+                    </issueLinkTemplatePerSystem>
+                </configuration>
+                <version>2.3</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>changes-report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <developers>
+        <developer>
+            <id>__ID__</id>
+            <name>__NAME__</name>
+            <email>__EMAIL__</email>
+            <url>__URL__</url>
+            <organization>__ORGANIZATION__</organization>
+            <timezone>1</timezone>
+        </developer>
+    </developers>
+</project>
